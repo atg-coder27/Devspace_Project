@@ -1,17 +1,18 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GoLearn.com</title>
-    <link rel="stylesheet" href="../Project-DEVSPACE2021-main/style.css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav id="navbar">
         <div id="logo">
-            <img src="../Project-DEVSPACE2021-main/Img/logo.jpg" alt="Logo">
+            <img src="{% static file 'images/logo.jpg' %}" alt="Logo">
         </div>
         <ul>
             <li class="items"><a href="#home">Home</a></li>
@@ -54,7 +55,7 @@
                 <p>Learn from those who are dedicated in teaching you and engage yourself in self-structured learning</p>
             </div>
             <div class="img1">
-                <img src="../Project-DEVSPACE2021-main/Img/learning.png" alt="img1">
+                <img src="{% static file 'images/learning.png' %}" alt="img1">
             </div>
         </div>
         <div class="whyboss2">
@@ -63,7 +64,7 @@
                 <p>Structured resources specifically for those suffering from ADHD or dyslexia</p>
             </div>
             <div class="img2">
-                <img src="../Project-DEVSPACE2021-main/Img/img2.jpeg" alt="img2">
+                <img src="{% static file 'images/img2.jpeg' %}" alt="img2">
             </div>
         </div>
     </section>
