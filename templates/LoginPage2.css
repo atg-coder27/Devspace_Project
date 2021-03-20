@@ -1,0 +1,26 @@
+.Teacher, .Student {
+    height: 100vh;
+    width: 100%;
+}
+
+.Teacher {
+    /*background-color: #f93497;*/
+    background-image: url("./new.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    text-align: center;
+}
+
+.Student {
+    /*background-color: #04226c;*/
+    background-image: url("./SIdeImage.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    text-align: center;
+}
+
+#H {
+    color: white;
+}
