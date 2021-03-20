@@ -14,7 +14,7 @@
 
 .Student {
     /*background-color: #04226c;*/
-    background-image: url("./SIdeImage.jpg");
+    background-image: url("../images/SIdeImage.jpg");
     background-repeat: no-repeat;
     background-size: contain;
     display: inline-block;
