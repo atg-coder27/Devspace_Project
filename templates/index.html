@@ -1,23 +1,22 @@
 <!DOCTYPE html>
-{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GoLearn.com</title>
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="../Project-DEVSPACE2021-main/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav id="navbar">
         <div id="logo">
-            <img src="{% static 'images/logo.jpg' %}" alt= "Logo" >
+            <img src="../Project-DEVSPACE2021-main/Img/logo.jpg" alt="Logo">
         </div>
         <ul>
-            <li class="items"><a href="#">Home</a></li>
-            <li class="items"><a href="#">Why GoLearn</a></li>
-            <li class="items"><a href="#">Contact Us</a></li>
+            <li class="items"><a href="#home">Home</a></li>
+            <li class="items"><a href="#why">Why GoLearn</a></li>
+            <li class="items"><a href="#contact">Contact Us</a></li>
             <li class="items"><a href="#">Login</a></li>
         </ul>
         <div class="join">
@@ -47,48 +46,56 @@
         <button class="btn">Book a Demo Class Now</button>
     </section>
 
-    <section id="Why">
+    <section id="why">
         <h1 class="h-primary center">Why GoLearn ?</h1>
-        <div class="why1">
-            <h3>Passionate Teachers</h3>
-            <p>Learn from those who are dedicated in teaching you and engage yourself in self-structured learning</p>
+        <div class="whyboss1">
+            <div class="why1">
+                <h3>Passionate Teachers</h3>
+                <p>Learn from those who are dedicated in teaching you and engage yourself in self-structured learning</p>
+            </div>
+            <div class="img1">
+                <img src="../Project-DEVSPACE2021-main/Img/learning.png" alt="img1">
+            </div>
         </div>
-        <div class="img1">
-            <img src="" alt="img1">
-        </div>
-        <div class="why2">
-            <h3>Carefully Designed Resources</h3>
-            <p>Structured resources specifically for those suffering from ADHD or dyslexia</p>
-        </div>
-        <div class="img2">
-            <img src="" alt="img2">
+        <div class="whyboss2">
+            <div class="why2">
+                <h3>Carefully Designed Resources</h3>
+                <p>Structured resources specifically for those suffering from ADHD or dyslexia</p>
+            </div>
+            <div class="img2">
+                <img src="../Project-DEVSPACE2021-main/Img/img2.jpeg" alt="img2">
+            </div>
         </div>
     </section>
 
     <section id="contact">
         <h1 class="h-primary center">Contact Us</h1>
-        <form action="#">
-            <div class="contact-form">
-                <label for="name">Name: </label>
-                <input type="text" name="name" id="name" required="required">
-            </div>
+        <div class="contact-box">
 
-            <div class="contact-form">
-                <label for="E-mail">E-mail: </label>
-                <input type="email" name="E-mail" id="E-mail" required="required">
-            </div>
-
-            <div class="contact-form">
-                <label for="number">Phone number: </label>
-                <input type="number" name="number" id="number" required="required">
-            </div>
-
-            <div class="contact-form">
-                <label for="msg">Message: </label>
-                <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
-            </div>
-        </form>
-    </div>
+            <form action="#">
+                <div class="contact-form">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name" required="required">
+                </div>
+    
+                <div class="contact-form">
+                    <label for="E-mail">E-mail: </label>
+                    <input type="email" name="E-mail" id="E-mail" required="required">
+                </div>
+    
+                <div class="contact-form">
+                    <label for="number">Phone number: </label>
+                    <input type="number" name="number" id="number" required="required">
+                </div>
+    
+                <div class="contact-form">
+                    <label for="msg">Message: </label>
+                    <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+                </div>
+                <button class="btn">Submit</button>
+            </form>
+        
+        </div>
     </section>
 
     <footer>

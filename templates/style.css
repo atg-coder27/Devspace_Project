@@ -1,0 +1,307 @@
+/* CSS Reset  */
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS var  */
+:root{
+    --primary-color:#04226c;
+    --secondary-color:#f93497;
+
+}
+/* Navigation bar  */
+#navbar{
+    display: flex;
+    align-items: center; 
+    position: sticky;
+    top: 0px;
+    height: 75px;
+    background-color: #04226c;
+}
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+#navbar ul li a{
+    color:whitesmoke;
+    display: block;
+    padding: 6px;
+    margin: 10px;
+    border-radius: 15px;
+    text-decoration: none;
+    transition: all 0.2s ease-in;
+}
+#navbar ul li a:hover{
+    color: whitesmoke;
+    background-color: #f93497;
+}
+#logo{
+    margin: 7px 20px;
+}
+#logo img{
+    margin: 12px 25px;
+    height: 60px;
+    width: 60px;
+}
+.join{
+    margin: 0px 0px 0px 600px;
+}
+.btn1{
+    display: block;
+    padding: 16px 20px;
+    margin: auto;
+    background-color:#f93497;
+    color: whitesmoke;
+    border-radius: 15px;
+    outline: none;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.2s ease-in;
+}
+.btn1:hover{
+    background-color:whitesmoke;
+    color:#f93497
+}
+/* Home */
+#home{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    padding: 10px 200px;
+    height: 700px;
+}
+#home::before{
+    content: "";
+    /* background: url('../Project-DEVSPACE2021-main/Img/bg-1.png'); */
+    background:blue;
+    background-image: url(../../template/img/bg_sub-header.png),-webkit-linear-gradient(#04226c,#f93497);
+    background-size: cover;
+    background-repeat: repeat;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.h-first{
+    font-size: 5.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: #f93497;
+}
+.h-second{
+    font-size: 5.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color:#04226c;
+}
+.h-third{
+    font-size: 5.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: #f93497;
+}
+/* Demo Class */
+#demo-class{
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    max-width: 76.3888888889vw;
+    padding: 0 15px;
+}
+#demo-class p{
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+.container-1,.container-2, #democlass button{
+    max-width: 68.3333333333vw;
+    margin: 0 auto 4.1666666667vw;
+    margin-left: -1.0416666667vw;
+    margin-right: -1.0416666667vw;
+}
+.container-1{
+    display: block;
+    width: 50%;
+    float: left;
+    padding-left: 1.0416666667vw;
+    padding-right: 1.0416666667vw;
+}
+.container-2{
+    display: block;
+    width: 50%;
+    float: right;
+    padding-left: 1.0416666667vw;
+    padding-right: 1.0416666667vw;
+}
+.container-1 p{
+    color:#04226c;
+}
+.container-2 p{
+    color: var(--secondary-color);
+}
+.btn{
+    display: block;
+    padding: 8px 30px;
+    margin: 0px 0px 20px 0px;
+    background-color:#f93497;
+    color: whitesmoke;
+    border-radius: 15px;
+    outline: none;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.2s ease-in;
+}
+.btn:hover{
+    background-color:whitesmoke;
+    color:#f93497
+}
+/* Why GoLearn */
+#why{
+    display:block;
+    background-image: url(../../template/img/bg_sub-header.png),-webkit-linear-gradient(#04226c,#f93497);
+
+}
+.whyboss1{
+    display: flex;
+}
+.why1{
+    display: flex;  
+    width: 50%;
+    padding-top: 7vw;
+    padding-bottom: 7vw;
+    padding-left: 2.7vw;
+    padding-right: 7.6vw;
+    flex-direction: column;
+    justify-content: center;
+}
+.img1{
+    display: block;
+    width: 50%;
+    height: 50%;
+    
+}
+.whyboss2{
+    display: flex;
+}
+.why2{
+    display: flex;  
+    width: 50%;
+    padding-top: 7vw;
+    padding-bottom: 7vw;
+    padding-left: 2.7vw;
+    padding-right: 7.6vw;
+    flex-direction: column;
+    justify-content: center;
+}
+.img2{
+    display: block;
+    width: 50%;
+    height: 50%;
+    
+}
+/* Contact us */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position:absolute;
+    background-image: url(../../template/img/bg_sub-header.png),-webkit-linear-gradient(#04226c,#f93497);
+    width: 100%;
+    height: 100%;
+    z-index: -1;    
+}    
+.contact-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 32px;
+}
+.contact-box form{
+    width: 40%;
+}
+.contact-box input,.contact-box textarea{
+    width: 100%;
+    padding:0.5rem;
+    border: 2px solid #5543ca;
+    border-radius: 20px;
+    border-width: 0px 0px 2px 0px;
+    background-color: #fff2f2;
+    outline: none;
+}
+.contact-form label{
+    cursor: text;
+    color: #f93497;
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+}
+footer{
+    text-align: center;
+    font-size: 1.1rem;
+    background-color: black;
+    color: #fff2f2;
+    padding: 20px 30px;
+}
+
+/* Utility class */
+.h-primary{
+    color: #f93497;
+    padding: 15px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+h3{
+    color:whitesmoke;
+    padding: 15px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    text-align: left;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+.why1 p{
+    color: #f93497;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+.why2 p{
+    color:#04226c;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+
+    
+
+
+
+
+
+
