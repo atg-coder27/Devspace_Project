@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,12 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Form </title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../Project-DEVSPACE2021/Registration form.css">
+    <link rel="stylesheet" href="{% static 'css/Registration form.css' %}">
 </head>
 <body>
     <nav id="navbar">
         <div id="logo">
-            <img src="../Project-DEVSPACE2021/img logo/logo2.jpg" alt="LOGO">
+            <img src="{% static 'images/logo2.jpg' %}" alt="LOGO">
         </div>
         <ul>
             <li class="items"><a href="#main-form">Home</a></li>

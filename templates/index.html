@@ -1,17 +1,18 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GoLearn.com</title>
-    <link rel="stylesheet" href="../Project-DEVSPACE2021-main/style.css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav id="navbar">
         <div id="logo">
-            <img src="../Project-DEVSPACE2021-main/Img/logo.jpg" alt="Logo">
+            <img src="{% static 'images/logo.jpg' %}" alt= "Logo" >
         </div>
         <ul>
             <li class="items"><a href="#">Home</a></li>

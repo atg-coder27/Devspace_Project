@@ -1,0 +1,118 @@
+/* CSS Reset  */
+*{
+    padding: 0px;
+    margin: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS var  */
+:root{
+    --primary-color:#04226c;
+    --secondary-color:#f93497;
+
+}
+/* Navigation bar  */
+#navbar{
+    display: flex;
+    align-items: center; 
+    position: sticky;
+    top: 0px;
+    height: 75px;
+    background-color: #04226c;
+}
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+#navbar ul li a{
+    color:whitesmoke;
+    display: block;
+    padding: 6px;
+    margin: 10px;
+    border-radius: 15px;
+    text-decoration: none;
+    transition: all 0.2s ease-in;
+}
+#navbar ul li a:hover{
+    color: whitesmoke;
+    background-color: #f93497;
+}
+#logo{
+    margin: 7px 20px;
+}
+#logo img{
+    margin: 12px 25px;
+    height: 60px;
+    width: 60px;
+}
+.join{
+    margin: 0px 0px 0px 600px;
+}
+.btn1{
+    display: block;
+    padding: 16px 20px;
+    margin: auto;
+    background-color:#f93497;
+    color: whitesmoke;
+    border-radius: 15px;
+    outline: none;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.2s ease-in;
+}
+.btn1:hover{
+    background-color:whitesmoke;
+    color:#f93497
+}
+/* Home */
+#home{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    padding: 10px 200px;
+    height: 600px;
+}
+#home::before{
+    content: "";
+    /* background: url('../Project-DEVSPACE2021-main/Img/bg-1.png'); */
+    background:blue;
+    background-image: url(../../template/img/bg_sub-header.png),-webkit-linear-gradient(#04226c,#f93497);
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    
+}
+.h-first{
+    font-size: 5.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: #f93497;
+}
+.h-second{
+    font-size: 5.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color:#04226c;
+}
+.h-third{
+    font-size: 5.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: #f93497;
+}
+
+
+
+

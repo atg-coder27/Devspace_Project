@@ -1,0 +1,131 @@
+/*CSS Reset*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+
+    background:blue;
+    background-image: url(../../template/img/bg_sub-header.png);
+    background-image: url(../../template/img/bg_sub-header.png),-webkit-linear-gradient(#04226c,#f93497);
+    /* background-image: url(../../template/img/bg_sub-header.png),-webkit-linear-gradient(#3578b0,#00BA8F); */
+    
+    
+}
+/*CSS Var*/
+:root{
+    --nav-color:#0862ae;
+
+}
+/* Navigation Bar  */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    height: 75px;
+    background-color: var(--nav-color);
+}
+#logo{
+    margin: 6px 20px;
+}
+#logo img{
+    margin: 12px 25px;
+    height: 70px;
+    width: 70px;
+}
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+#navbar ul li a{
+    color: whitesmoke;
+    display: block;
+    padding: 6px;
+    margin: 15px;
+    border-radius:15px ;
+    text-decoration: none;
+    transition: all 0.2s ease-in;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: whitesmoke;
+
+}
+/*Form Heading*/
+#heading{
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding: 7px;
+    margin: 15px;
+}
+/*Form*/
+#main-form{
+    display: flex;
+    padding: 7px 15px;
+    margin: 10px;
+}
+.primary{
+    font-weight: bold;
+    font-family:'Poppins', sans-serif; 
+}
+.forms input , .forms textarea{
+    font-family:'Poppins', sans-serif; 
+    display: block;
+    width: 400px;
+    padding: 4px;
+    margin: 11px auto;
+    font-size: 15px;
+    border:2px solid #5543ca;
+    border-width: 0px 0px 2px 0px;
+    background-color: #fff2f2;
+    border-radius: 8px;
+    outline: none;
+}
+.forms label{
+    font-weight: bold;
+    font-family:'Poppins', sans-serif; 
+    font-size: 15px;
+}
+.container-1{
+    margin: 0px 150px 0px 100px ;
+    
+}
+.container-2{
+    margin: 0px 0px 0px 275px ;
+   
+}
+h2{
+    text-align: center;
+    padding-bottom: 20px;
+}
+.btn{
+    padding: 6px 15px;
+    border:2px solid black;
+    background-color: var(--nav-color);
+    color: whitesmoke;
+    margin: 15px;
+    font-size: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.4s ease-in ;
+}
+/*Footer*/
+footer{
+    text-align: center;
+    color: whitesmoke;
+    background-color: black;
+    padding: 20px 30px;
+}
+
+
